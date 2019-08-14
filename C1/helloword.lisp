@@ -1,0 +1,6 @@
+(format t "hello lijuny")
+(+ 11 11)
+(defvar  size 2)
+(print size)
+(defun add2 (x) (+ x 2))
+(print (add2 12))

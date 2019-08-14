@@ -1,0 +1,13 @@
+(defun good-enough? (guess x)
+    (< (abs (- (square guess) x)) 0.001)
+)
+(defun square (x) (* x x))
+(defun averge (x y) (/ (+ x y) 2))
+(defun improve (guess x) 
+    (averge guess (/ x guess))
+)
+(defun sqrt-iter (guess x)
+    (if (good-enough? guess x)
+        guess
+        (sqrt-iter (improve guess x) x)))
+(write  (sqrt-iter 1 2))
