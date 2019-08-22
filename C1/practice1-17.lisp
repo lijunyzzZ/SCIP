@@ -1,0 +1,10 @@
+(defun double (x) (+ x x))
+(defun havle (x) (/ x 2))
+(defun fast-expt (a b)
+    (cond
+    ((= a 0) 0) 
+        ((= a 1)b)
+     ((= (rem a 2) 0) (fast-expt (havle a) (double b))) 
+        (t (+ b (fast-expt (- a 1) b)))
+        ))
+(print (fast-expt 3 0))
