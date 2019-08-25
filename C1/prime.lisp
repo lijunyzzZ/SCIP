@@ -1,4 +1,4 @@
-(defun square (x) (* x x))
+defun square (x) (* x x))
 (defun isRem(n x) (= (rem n x) 0))
 (defun findDivisor (n index)
 (cond 
