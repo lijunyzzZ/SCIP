@@ -1,0 +1,8 @@
+(define (makeRatCore x y) (cons x y))
+(define (getNag x) (if (< x 0) x (- x) ))
+(define (makeRat x y)
+    (if (< (* x y) 0)
+        (makeRatCore (getNag x) (abs y))
+        (makeRatCore (abs x) (abs y))
+    )
+)
