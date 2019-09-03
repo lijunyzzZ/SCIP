@@ -24,7 +24,7 @@
     (l2 (lower-interva b))
     )
 (cond 
-    ((and (>= l1 0) (>= l2 0)) (make-interval (* l1 l2) (* u1 u2)))
+    ((and (>= l1 0) (>= l2 0)) (make-interval (* l1 l2) (* u1u2)))
     ((and (>= l1 0) (< l2 0) (>= u2 0) (make-interval (* u1 l2) (* u1 u2))))
     ((and (>= l1 0) (<= u2 0))(make-interval (* u1 l2) (* l1 u2)))
     ((and (< l1 0) (>= u1 0)(> l2 0))(make-interval (* l1 u2)(*u1 u2)))
