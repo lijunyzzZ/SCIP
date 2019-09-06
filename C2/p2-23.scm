@@ -1,0 +1,10 @@
+
+(define (foreach f items)
+    (if (not (null? items)) (begin (f (car items))
+    (foreach f (cdr items)))
+))
+(define items (list 1 2 3))
+(define (fun1 x) 
+    (newline)
+    (display x)
+)
