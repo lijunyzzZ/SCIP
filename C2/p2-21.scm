@@ -1,6 +1,6 @@
 (define (square x) (* x x))
 ; (define (square-list items) 
-;     (if (null? items) nil (cons (square (car items)) (cdr items))
+;     (if (null? items) () (cons (square (car items)) (cdr items))
 ; )
 ; )
 ; (define list1 (list 1 2 3 4()))
