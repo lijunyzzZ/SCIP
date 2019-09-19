@@ -1,0 +1,11 @@
+(define (accumulate op innitial seq)
+    (if (null? seq) innitial
+    (op (car seq ) (accumulate op innitial (cdr seq)))
+    )
+)
+(define (dot-product v w)
+(accumulate + 0 (map * v w))
+)
+(define v (list 1 2 3))
+(define w (list 4 5 6))
+(define m (list (list 1 2 3)(list 4 5 6)(list 7 8 9)))
