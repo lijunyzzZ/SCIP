@@ -14,7 +14,7 @@
                         (eni 1 board-size)
                         )
                     )
-                    (queen-cols (- k 1))
+                    (queen-cols (- k 1));queen-cols表示的第几行解法
                 )
             )
         )
