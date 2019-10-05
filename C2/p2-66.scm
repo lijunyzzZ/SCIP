@@ -1,0 +1,7 @@
+(define (lookup key tree)
+    (cond ((null? tree) #f)
+    ((eq? (entry tree) key) #t )
+    ((< key (entry tree)) (lookup key (left-branch tree)))
+    (else (lookup key (right-branch tree)))
+    )
+)
