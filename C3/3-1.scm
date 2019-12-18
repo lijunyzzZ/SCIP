@@ -1,0 +1,6 @@
+(define (make-accumulator index)
+    (lambda (number) 
+        (begin (set! index (+ number index)) index)
+    )
+)
+(define A (make-accumulator 5))
